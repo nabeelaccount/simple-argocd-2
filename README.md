@@ -1,6 +1,6 @@
 # Simple demontration on the use of ArgoCD
 
-This is the application repository where we emulate the typical Developer experience of creating an application and deploying it to an container image repository. The example we will use here is Docker Hub, however, the same can be achieved on any Image repository like Amazon's ECR.
+This is GitOps repository where we emulate the typical Developer experience of creating an application and deploying it to an container image repository and then creating K8s manifest. The example we will use here is Docker Hub, however, the same can be achieved on any Image repository like Amazon's ECR.
 
 ## Getting started
 
@@ -40,3 +40,12 @@ Assuming you've made changes to your application, you can update it as follows
 docker tag nginx:1.29.0 nabeelhamad893/nginx:v0.1.1
 docker push nabeelhamad893/nginx:v0.1.1
 ```
+
+Please update the image in 1-deployment.yaml with the latest image tag/version.
+
+
+### Environment Folder structure
+
+The environment folder structure allows us to group applications based on the environment they will be applied to.
+
+
