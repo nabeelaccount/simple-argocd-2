@@ -35,3 +35,8 @@ docker push nabeelhamad893/nginx:v0.1.0
 
 ### Running
 
+Assuming you've made changes to your application, you can update it as follows
+```sh
+docker tag nginx:1.29.0 nabeelhamad893/nginx:v0.1.1
+docker push nabeelhamad893/nginx:v0.1.1
+```
